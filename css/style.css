@@ -1,0 +1,315 @@
+
+.jumbotron {
+    background-color: rgb(47, 90, 88);
+    color: white;
+    min-height: 400px;
+    text-align: center;
+}
+.jumbotron h1 {
+    margin-bottom: 20px;
+}
+.jumbotron p {
+    color: rgb(231, 231, 231);
+    margin-bottom: 35px;
+}
+.jumbotron .wrapper-dots {
+    position: relative;
+}
+.jumbotron img {
+    width: 100%;
+    margin-top: 40px;
+    z-index: 2;
+}
+.jumbotron .dots {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    width: 170px;
+    height: 160px;
+    background-image: radial-gradient(circle, #798d7d 3px, transparent 1.5px);
+    background-size: 25px 25px;
+    z-index: 1;
+}
+
+
+/* product */
+.product {
+    text-align: center;
+}
+.product h2 {
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.product p {
+    margin-bottom: 25px;
+}
+
+
+.product .card {
+    border: none;
+    position: relative;
+}
+.product .card p {
+    margin-bottom: 0;
+}
+.product .gambar {
+    width: 100%;
+    height: 240px;
+    z-index: 2;
+}
+.product img {
+    max-width: 200px;
+}
+
+.product .card-text {
+    font-size: 14px;
+    margin-top: 0 !important;
+    font-weight: 600;
+}
+.product .card-body {
+    z-index: 2;
+}
+
+.product .card::before {
+    content: '';
+    position: absolute;
+    inset: 25% 0 0 0;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s;
+}
+.product .card:hover::before {
+    content: '';
+    position: absolute;
+    inset: 25% 0 0 0;
+    background-color: rgb(218, 218, 218);
+    border-radius: 10px;
+    opacity: 1;
+}
+.product .card a {
+    position: absolute;
+    margin-left: -20px;
+    bottom: -6%;
+    opacity: 0;
+    transition: .5s;
+}
+.product .card:hover a {
+    opacity: 1;
+}
+
+
+/* WHY US */
+.whyUs {
+    margin-top: 50px;
+}
+.whyUs .row {
+    align-items: center;
+    justify-content: center;
+}
+.whyUs .judul-why {
+    margin-top: 30px;
+}
+.whyUs h3 i {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.whyUs h2 {
+    margin-bottom: 15px;
+}
+.whyUs .benefit h3  {
+    margin-bottom: 10px;
+}
+.whyUs .benefit h5 {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.whyUs .benefit p {
+    line-height: 20px;
+}
+
+.whyUs .wrapper-dots {
+    position: relative;
+}
+.whyUs img {
+    width: 100%;
+    position: inherit;
+    border-radius: 10px;
+    z-index: 2;
+}
+.whyUs .dots {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    top: -10%;
+    left: -10%;
+    background-image: radial-gradient(circle, rgb(255, 187, 0) 3px, transparent 1.5px);
+    background-size: 26px 26px;
+    z-index: 1;
+}
+
+/* about */
+.about {
+    text-align: center;
+    margin-top: 40px;
+}
+.about img {
+    border-radius: 10px;
+    position: relative;
+}
+.about .img-main {
+    width: 65%;
+}
+.about .img-square {
+    width: 30%;
+}
+.about .img-bottom {
+    position: absolute;
+    width: 45%;
+    bottom: -6%;
+    right: 2%;
+}
+.about h2 {
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+.about .deskripsi {
+    margin-bottom: 30px;
+}
+.about p {
+    text-align: left;
+}
+.about .btn {
+    margin-top: 25px;
+}
+.about .dots {
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    background-image: radial-gradient(circle, rgb(47, 90, 88) 3px, transparent 1.5px);
+    background-size: 26px 26px;
+    top: -14%;
+    left: -10%;
+    z-index: -1;
+}
+
+/* chair */
+.chair .col-10 {
+    margin-bottom: 25px;
+}
+.chair img {
+    width: 110px;
+    margin-right: 15px;
+}
+.chair h6 {
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 8px;
+}
+.chair p {
+    font-size: 13px;
+    margin-top: -3px;
+    margin-bottom: 5px;
+}
+.chair a {
+    color: rgb(90, 83, 83);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.chair a:hover {
+    color: rgb(37, 36, 36);
+}
+
+/* footer */
+footer {
+    padding: 15px;
+    background-color: rgb(47, 90, 88);
+}
+footer p {
+    margin-bottom: 0;
+    padding: 30px auto;
+    text-align: center;
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 30px !important;
+    }
+    .navbar-brand,
+    .nav-link {
+        color: white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, .7);
+    }
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 2px rgb(255, 230, 0) solid;
+        width: 60%;
+        margin: auto;
+        margin-bottom: -2px;
+    }
+
+
+    .jumbotron {
+        margin-top: -75px;
+        min-height: 540px;
+        text-align: left;
+    }
+    .jumbotron .display-4 {
+        margin-top: 80px;
+    }
+    .jumbotron img {
+        margin-top: 130px;
+    }
+    .jumbotron .dots {
+        top: 25%;
+        right: 0;
+        width: 190px;
+        height: 190px;
+    }
+
+    .product {
+        text-align: left;
+    }
+
+
+    .whyUs {
+        margin-top: 80px;
+    }
+    .whyUs .row {
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .whyUs .dots {
+        width: 230px;
+        height: 230px;
+        top: -13%;
+        left: -13%;
+    }
+
+    /* ABout */
+    .about {
+        margin-top: 80px;
+        text-align: left;
+    }
+    .about .text {
+        width: 45%;
+    }
+    .about h2 {
+        margin-top: 20px;
+    }
+    .about .dots {
+        width: 190px;
+        height: 190px;
+        top: -14%;
+        left: -10%;
+    }
+
+    .chair .col-10 {
+        margin-bottom: 0;
+    }
+}
